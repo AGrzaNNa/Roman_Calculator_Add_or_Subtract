@@ -18,4 +18,4 @@ Następnie, wynik działania jest przekazywany do funkcji convert_to_roman, któ
 
 Na koniec, funkcja convert_to_roman zwraca ostateczny wynik w zapisie rzymskim. W przypadku błędnego znaku działania, próby odejmowania większej liczby od mniejszej lub wyniku równego zero, program zwraca odpowiednie komunikaty błędu.
 
-W ten sposób, Twój program przeprowadza dodawanie i odejmowanie liczb w zapisie rzymskim, dostarczając wynik w tym samym formacie.
+W ten sposób, program przeprowadza dodawanie i odejmowanie liczb w zapisie rzymskim, dostarczając wynik w tym samym formacie.
