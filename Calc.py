@@ -83,7 +83,7 @@ def Action(input_str):
 
 
 print("Welcome to Roman Calculator. Choose one of the following activities: +/- (the maximum range is MM)")
-input_str = input("Enter your equation: ")
+input_str = input("Enter your equation : ")
 result = Action(input_str)
 print("Answer is:", result)
 
