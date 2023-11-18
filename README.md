@@ -1,21 +1,20 @@
-OPIS ROZWIĄZANIA
+DESCRIPTION OF THE SOLUTION
 
-Do rozwiązania tego zadania użyłem słownika o nazwie romans, który przechowuje wartości symboli rzymskich wraz z ich odpowiednikiem w zapisie arabskim do M: 1000 .
+For solving this task, I used a dictionary named "roman" that stores the values of Roman numerals along with their Arabic counterparts up to M: 1000.
 
-Działanie programu rozpoczyna się od pobrania ciągu tekstu jako values i podzielenia go za pomocą .split() na trzy wartości: romans_1, romans_2 oraz znak_działania(values[1]). Następnie, w zależności od znak_działania(values[1]), program przechodzi do odpowiedniej pętli: Add (dodawanie) lub Subtraction (odejmowanie).
+The program's operation begins by fetching the input text as "values" and splitting it using .split() into three values: romans_1, romans_2, and "operation_sign(values[1])". Next, depending on the "operation_sign(values[1])", the program proceeds to the corresponding loop: Add (addition) or Subtraction (subtraction).
 
-W obu pętlach, iterujemy po poszczególnych znakach liczb za pomocą pętli for, przez długość tych liczb
-(len(romans_1) - 1). Dla każdego znaku sprawdzamy, czy kolejny znak jest większy od obecnego. Jeśli tak, odejmujemy wartość obecnego znaku od wyniku. W przeciwnym razie, dodajemy wartość znaku do wyniku.
+In both loops, we iterate over individual numeral characters using a for loop, iterating for the length of these numerals (len(romans_1) - 1). For each character, we check if the next character is greater than the current one. If so, we subtract the value of the current character from the result. Otherwise, we add the value of the character to the result.
 
-Przykład CXL :
+Example: CXL
 result = 100
 i++
 XL X<L
-result-=10 //90
-result+=50 //140
+result -= 10 // 90
+result += 50 // 140
 
-Następnie, wynik działania jest przekazywany do funkcji convert_to_roman, która przekształca zapis arabski na zapis rzymski. W tej funkcji znajduje się pętla, która iteruje przez pary wartość-symbol w słowniku roman_numerals. Dla każdej pary, pętla sprawdza, czy podana liczba jest większa lub równa wartości. Jeśli tak, dodaje odpowiedni symbol do łańcucha roman i odejmuje wartość od liczby. Pętla wykonuje się tak długo, jak długo liczba jest większa lub równa aktualnej wartości.
+Then, the result of the operation is passed to the "convert_to_roman" function, which converts the Arabic numeral representation to Roman numeral representation. In this function, there is a loop that iterates over pairs of value-symbol in the "roman_numerals" dictionary. For each pair, the loop checks if the given number is greater than or equal to the value. If so, it adds the corresponding symbol to the "roman" string and subtracts the value from the number. The loop continues as long as the number is greater than or equal to the current value.
 
-Na koniec, funkcja convert_to_roman zwraca ostateczny wynik w zapisie rzymskim. W przypadku błędnego znaku działania, próby odejmowania większej liczby od mniejszej lub wyniku równego zero, program zwraca odpowiednie komunikaty błędu.
+In the end, the "convert_to_roman" function returns the final result in Roman numeral representation. In case of an invalid operation sign, attempts to subtract a larger number from a smaller one, or a result equal to zero, the program returns appropriate error messages.
 
-W ten sposób, program przeprowadza dodawanie i odejmowanie liczb w zapisie rzymskim, dostarczając wynik w tym samym formacie.
+In this way, the program performs addition and subtraction of numbers in Roman numeral representation, providing the result in the same format.
